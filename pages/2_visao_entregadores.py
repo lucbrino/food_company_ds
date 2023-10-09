@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-
+from datetime import datetime
 
 #=================================================================#
 #---------------------------FUNÇÕES-------------------------------#
@@ -127,7 +127,7 @@ def ten_worst(df1):
     
     
     
-df = pd.read_csv(r"dataset\train.csv")
+df = pd.read_csv(r"dataset/train.csv")
 
 df1 = clean_code( df )
 
@@ -140,7 +140,6 @@ st.header("Marketplace - Visao Entregadores")
 # BARRA LATERAL
 #==============================================================================
 
-#image_path = "logo.png"
 image = Image.open( 'logo.png' )
 st.sidebar.image( image, width=120 )
 
@@ -150,7 +149,7 @@ st.sidebar.markdown("""---""")
 
 st.sidebar.markdown("## Choose a deadline!")
 
-date_slider = st.sidebar.slider( "Deadline", value=pd.datetime(2022, 4, 13), min_value=pd.datetime(2022, 2, 12), max_value=pd.datetime(2022, 4, 13), format="DD-MM-YYYY" )
+date_slider = st.sidebar.slider( "Deadline", value=datetime(2022, 4, 13), min_value=datetime(2022, 2, 12), max_value=datetime(2022, 4, 13), format="DD-MM-YYYY" )
 st.sidebar.markdown("""---""")
 
 traffic_options = st.sidebar.multiselect("Quais as condições de trânsito?", ['Low', 'Medium', 'High', 'Jam'], default=['Low', 'Medium', 'High', 'Jam'])
