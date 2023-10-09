@@ -104,7 +104,7 @@ clima ensolarado.
 ### 5. O produto final do projeto
 Painel online, hospedado em um Cloud e disponível para acesso em
 qualquer dispositivo conectado à internet.
-O painel pode ser acessado através desse link: https://project-currycompany.streamlit.app/
+O painel pode ser acessado através desse link: https://foodcompanyds.streamlit.app/
 
 ### 6. Conclusão
 Da visão da Empresa, podemos concluir que o número de pedidos
