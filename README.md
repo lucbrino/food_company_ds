@@ -108,7 +108,7 @@ O painel pode ser acessado através desse link: https://foodcompanyds.streamlit.
 
 ### 6. Conclusão
 Da visão da Empresa, podemos concluir que o número de pedidos
-cresceu entre a semana 06 e a semana 13 do ano de 2022.
+cresceu entre a semana 06 e a semana 13 do ano de 2022. 
 
 ### 7. Próximo passos
 1. Reduzir o número de métricas.
